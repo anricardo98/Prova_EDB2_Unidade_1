@@ -17,12 +17,12 @@ int main(){
   cout << "Quantos buckets serao adicionados?" << endl;
   cin >> aux;
 
-  if(resposta < 0){ //se o numero indicado for inválido, apenas ocorrerá a impressão da mensagem
+  if(aux <= 0){ //se o numero indicado for inválido, apenas ocorrerá a impressão da mensagem
     cout << "Resposta invalida. Reinicie o programa" << endl;
 
   } else {
     //criação da tabela de dispersão e inserção dos elementos pré-determinados
-    Hash tabela(resposta);
+    Hash tabela(aux);
     for (int i = 0; i < tamanho; i++){
       tabela.insercao(lista_base[i]);
     }
